@@ -48,7 +48,7 @@
         <div class="sidebar-icon group">
           <img
             class="rounded-full"
-            src="https://media.licdn.com/dms/image/C560BAQFq7YErNcNtnA/company-logo_200_200/0/1630668103802/loop_cs_logo?e=2147483647&v=beta&t=nRTEWSgJyiQx-U06uqQS0jGCpXAJF7vAxjVzae0A6Xo"
+            src="https://cdn.discordapp.com/attachments/1115324664726691870/1187042785229013103/loop.gif?ex=659572be&is=6582fdbe&hm=3fdc0902abc603d644fbd0011c1c1552a9350ca9358b8085259c2b30c3f8b193&"
             width="28px"
             height="28px"
             alt=""
@@ -59,7 +59,176 @@
         <div class="sidebar-icon group">
           <img
             class="rounded-full"
-            src="./logos/google.png"
+            src="https://cdn.discordapp.com/attachments/1115324664726691870/1187042373117685800/google.png?ex=6595725b&is=6582fd5b&hm=5ddb755b06e5ef3b1fb3470ac8d5b71739076b8abd86a051fddc905a3fb70d83&"
+            width="28px"
+            height="28px"
+            alt=""
+          />
+          <span class="sidebar-tooltip group-hover:scale-100">Google</span>
+        </div>
+
+        <div class="sidebar-icon group">
+          <img
+            class="rounded-full"
+            src="https://cdn.discordapp.com/icons/150662382874525696/a_d64df49c5fa82f5f6c1c44e1fcef18a4.gif"
+            width="28px"
+            height="28px"
+            alt=""
+          />
+          <span class="sidebar-tooltip group-hover:scale-100">Micorsoft</span>
+        </div>
+
+        <div class="sidebar-icon group">
+          <img
+            class="rounded-full"
+            src="https://cdn.discordapp.com/icons/1167577284543254568/c455cdc7d33ecc3c27d15ad3f19b4fd2.webp"
+            width="28px"
+            height="28px"
+            alt=""
+          />
+          <span class="sidebar-tooltip group-hover:scale-100">Jail</span>
+        </div>
+
+        <hr
+          class="w-12 h-1 mx-auto my-4 bg-gray-100 border-0 rounded dark:bg-gray-700"
+        />
+
+        <div class="sidebar-icon group">
+          <svg
+            class="rounded-full"
+            aria-hidden="true"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28px"
+            height="28px"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M13 5a1 1 0 1 0-2 0v6H5a1 1 0 1 0 0 2h6v6a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2h-6V5Z"
+              class=""
+            ></path>
+          </svg>
+          <span class="sidebar-tooltip group-hover:scale-100"
+            >Add a server</span
+          >
+        </div>
+
+        <div class="sidebar-icon group">
+          <svg
+            class="rounded-full"
+            aria-hidden="true"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28px"
+            height="28px"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+              class=""
+            ></path>
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M23 12a11 11 0 1 1-22 0 11 11 0 0 1 22 0ZM7.74 9.3A2 2 0 0 1 9.3 7.75l7.22-1.45a1 1 0 0 1 1.18 1.18l-1.45 7.22a2 2 0 0 1-1.57 1.57l-7.22 1.45a1 1 0 0 1-1.18-1.18L7.74 9.3Z"
+              clip-rule="evenodd"
+              class=""
+            ></path>
+          </svg>
+
+          <span class="sidebar-tooltip group-hover:scale-100">Explore</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    tailwind.config = {
+      mode: "jit",
+      theme: {
+        extend: {
+          colors: {
+            gray: {
+              900: "#202225",
+              800: "#2f3136",
+              700: "#36393f",
+              600: "#4f545c",
+              400: "#d4d7dc",
+              300: "#e3e5e8",
+              200: "#ebedef",
+              100: "#f2f3f5",
+            },
+          },
+        },
+      },
+    };
+  </script>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/tailwindcss">
+      @layer components {
+        .sidebar-icon {
+          @apply relative flex items-center justify-center 
+    h-12 w-12 mt-2 mb-2 mx-auto  
+  bg-gray-400 hover:bg-green-600 dark:bg-gray-800 
+  text-green-500 hover:text-white
+    hover:rounded-xl rounded-3xl
+    transition-all duration-300 ease-linear
+    cursor-pointer shadow-lg;
+        }
+        .sidebar-tooltip {
+          @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
+    text-white bg-gray-900 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-left;
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="bg-gray-600">
+    <div class="flex">
+      <div
+        class="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-900 text-white shadow-lg"
+      >
+        <div class="sidebar-icon group">
+          <img
+            src="https://www.taw.life/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdiscord.9d630369.gif&w=96&q=75"
+            width="28px"
+            height="28px"
+            alt=""
+          />
+          <span class="sidebar-tooltip group-hover:scale-100">Discord</span>
+        </div>
+
+        <hr
+          class="w-12 h-1 mx-auto my-4 bg-gray-100 border-0 rounded dark:bg-gray-700"
+        />
+
+        <div class="sidebar-icon group">
+          <img
+            class="rounded-full"
+            src="https://cdn.discordapp.com/attachments/1115324664726691870/1187042785229013103/loop.gif?ex=659572be&is=6582fdbe&hm=3fdc0902abc603d644fbd0011c1c1552a9350ca9358b8085259c2b30c3f8b193&"
+            width="28px"
+            height="28px"
+            alt=""
+          />
+          <span class="sidebar-tooltip group-hover:scale-100">Loop</span>
+        </div>
+
+        <div class="sidebar-icon group">
+          <img
+            class="rounded-full"
+            src="https://cdn.discordapp.com/attachments/1115324664726691870/1187042373117685800/google.png?ex=6595725b&is=6582fd5b&hm=5ddb755b06e5ef3b1fb3470ac8d5b71739076b8abd86a051fddc905a3fb70d83&"
             width="28px"
             height="28px"
             alt=""
